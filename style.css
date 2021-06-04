@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(120deg, #fff5eb, #deedf0, #f4c7ab);
+    min-height: 100vh;
+
+}
+
+div{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:30px 30px 20px teal;
+        
+}
+h1{
+    animation: blinker 5s linear infinite;
+    color: teal;
+    border-radius: 20px;
+    box-shadow:10px 10px 20px teal;
+    padding: 10px;
+    text-align: center;
+
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  
+  }
+h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.text{
+    text-align: left;
+    margin-left: 150px;
+}
+
+#height, #weight{
+    color: teal;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid teal;
+    width: 200px;
+}
+#height:focus, #weight:focus{
+    border-bottom: 3px solid teal;
+    width: 300px;
+    transition: 0.5s;
+
+}
+#result{
+    color: teal;
+    font-size: 30px;
+    text-align: center;
+}
+#btn{
+    font-size: 20px;
+    font-family: inherit;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(120deg, #39a6a3, dodgerblue, teal);
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 2px 2px 10px teal;
+}
+#info{
+    font-size: 20px;
+    font-family: inherit;
+}
