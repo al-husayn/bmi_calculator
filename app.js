@@ -10,7 +10,6 @@ first.addEventListener('click', () => {
     if (bmi < 18.5) {
         message = ", so you are underweight";
         color = "#FFD016";
-        img='images/underweight.png';
 
     } else if ((bmi >= 18.5) && (bmi <= 24.9)) {
         message = ", so you have normal weight";
@@ -31,6 +30,7 @@ first.addEventListener('click', () => {
         color = "#CB2028";
 
     }
-    result.innerHTML = "Your BMI is " + bmi + message;
+    // result.innerHTML = "Your BMI is " + bmi + message;
+    result.innerHTML = `Your BMI is ${bmi} ${message}`;
     result.style.color = color;    
 }, false);
